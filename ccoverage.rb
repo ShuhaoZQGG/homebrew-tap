@@ -5,21 +5,21 @@
 class Ccoverage < Formula
   desc "Coverage analysis for Claude Code project configuration"
   homepage "https://github.com/ShuhaoZQGG/ccoverage"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ShuhaoZQGG/ccoverage/releases/download/v0.0.9/ccoverage_0.0.9_darwin_amd64.tar.gz"
-      sha256 "6e1baaaadf2a620f07686577787851cdb70f1f9e9e0006d72c7549f7676124f2"
+      url "https://github.com/ShuhaoZQGG/ccoverage/releases/download/v0.0.10/ccoverage_0.0.10_darwin_amd64.tar.gz"
+      sha256 "95c66fe8fec596643f2e58874524d51edf593889b0700e8c736a0849c88dc42c"
 
       define_method(:install) do
         bin.install "ccoverage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ShuhaoZQGG/ccoverage/releases/download/v0.0.9/ccoverage_0.0.9_darwin_arm64.tar.gz"
-      sha256 "8ccc4ab4e530455d1f9f6eb4706c95fd140fbe486fe2e720a8d03f3e3fdd9b44"
+      url "https://github.com/ShuhaoZQGG/ccoverage/releases/download/v0.0.10/ccoverage_0.0.10_darwin_arm64.tar.gz"
+      sha256 "0a414c710222e40e4ea97de3bbcaea6799d2606e8ffa13f7bc4425ea4b74bf94"
 
       define_method(:install) do
         bin.install "ccoverage"
@@ -29,15 +29,15 @@ class Ccoverage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ShuhaoZQGG/ccoverage/releases/download/v0.0.9/ccoverage_0.0.9_linux_amd64.tar.gz"
-      sha256 "0c820fb6e659580d92cb5e8254c4c946498064fd100d197ece53e207dfde50e1"
+      url "https://github.com/ShuhaoZQGG/ccoverage/releases/download/v0.0.10/ccoverage_0.0.10_linux_amd64.tar.gz"
+      sha256 "b161690ec2baa4c2c8b2246f0a346cb164cfecf9aca07833d65335f9ef8f0255"
       define_method(:install) do
         bin.install "ccoverage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ShuhaoZQGG/ccoverage/releases/download/v0.0.9/ccoverage_0.0.9_linux_arm64.tar.gz"
-      sha256 "1b67a04b665a367ac69831e39f6119ddbba3a0a14e024f6b3f1fa95f66dcda8e"
+      url "https://github.com/ShuhaoZQGG/ccoverage/releases/download/v0.0.10/ccoverage_0.0.10_linux_arm64.tar.gz"
+      sha256 "d11c9bcb76bddebe535ac4605f2389a6cfa8e8d2da387dfa7312135483515ca5"
       define_method(:install) do
         bin.install "ccoverage"
       end
